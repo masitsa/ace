@@ -49,7 +49,7 @@ class Auth extends MX_Controller
                    'username'     => 'amasitsa',
                    'personnel_type_id'     => '2',
                    'personnel_id' => 0,
-                   'branch_code'   => 'SSL',
+                   'branch_code'   => 'OMN',
                    'branch_name'     => 'Omnis',
                    'personnel_number'     => '00',
                    'branch_id' => 2

@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50624
 File Encoding         : 65001
 
-Date: 2016-04-06 13:26:42
+Date: 2016-04-16 14:10:33
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -187,8 +187,7 @@ CREATE TABLE `branch` (
 -- ----------------------------
 -- Records of branch
 -- ----------------------------
-INSERT INTO `branch` VALUES ('2', 'info@serenityservices.co.ke', '+254704346052', '21316', '00100', 'Galana Plaza', 'Serenity Services Limited', '373e0b323b676e0ccf90cfd15310ae6b.jpg', 'thumbnail_373e0b323b676e0ccf90cfd15310ae6b.jpg', 'Nairobi, Kenya', '6th', 'Kilimani', '0', '0', '2015-08-28 07:27:08', '85', '2016-01-19 15:45:36', '0', '1', 'SSL', '');
-INSERT INTO `branch` VALUES ('3', 'info@quadrantafrica.co.ke', '', '', '', 'Galana Plaza', 'Quadrant Africa Limited', '8892ed3fee45e6ed34523bcd9c1940f6.png', 'thumbnail_8892ed3fee45e6ed34523bcd9c1940f6.png', '', '6th floor', 'Galana Road, Kilimani', '0', '0', '2016-03-01 04:49:40', '0', '2016-03-01 12:49:40', '0', '1', null, '');
+INSERT INTO `branch` VALUES ('3', 'info@omnis.co.ke', '0726149351', '70922', '00400', 'Galana Plaza', 'Omnis Limited', '3e5b10fd3d5ed165c546c4ed3c273042.png', 'thumbnail_3e5b10fd3d5ed165c546c4ed3c273042.png', 'Nairobi', '6th floor', 'Galana Road, Kilimani', '0', '0', '2016-03-01 04:49:40', '0', '2016-04-15 11:51:28', '0', '1', null, '');
 
 -- ----------------------------
 -- Table structure for `brand`
@@ -788,12 +787,7 @@ CREATE TABLE `ci_sessions` (
 -- ----------------------------
 -- Records of ci_sessions
 -- ----------------------------
-INSERT INTO `ci_sessions` VALUES ('240313e2ef68b1a3ad589eadab47e379', '::1', 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0', '1459936284', 'a:11:{s:9:\"user_data\";s:0:\"\";s:12:\"login_status\";b:1;s:10:\"first_name\";s:6:\"Alvaro\";s:11:\"other_names\";s:6:\"Alvaro\";s:8:\"username\";s:8:\"amasitsa\";s:17:\"personnel_type_id\";s:1:\"2\";s:12:\"personnel_id\";i:0;s:11:\"branch_code\";s:3:\"SSL\";s:11:\"branch_name\";s:5:\"Omnis\";s:16:\"personnel_number\";s:2:\"00\";s:9:\"branch_id\";i:2;}');
-INSERT INTO `ci_sessions` VALUES ('3eb3d60dcb76955ef1bf46d2261786db', '196.202.161.122', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36', '1459749330', '');
-INSERT INTO `ci_sessions` VALUES ('66fd8bf31b7d3891e232eff726244670', '196.202.161.122', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36', '1459749504', 'a:12:{s:9:\"user_data\";s:0:\"\";s:12:\"login_status\";b:1;s:10:\"first_name\";s:7:\"Barbara\";s:11:\"other_names\";s:15:\"Wanjiku Gitonga\";s:8:\"username\";s:7:\"Barbara\";s:12:\"personnel_id\";s:1:\"4\";s:9:\"branch_id\";s:1:\"2\";s:11:\"branch_code\";s:3:\"SSL\";s:16:\"personnel_number\";s:6:\"110220\";s:11:\"branch_name\";s:25:\"Serenity Services Limited\";s:25:\"authorize_invoice_changes\";s:1:\"0\";s:17:\"personnel_type_id\";s:1:\"1\";}');
-INSERT INTO `ci_sessions` VALUES ('8f28b2ae2414cf753099da3c63babd87', '196.202.161.122', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36', '1459749847', 'a:14:{s:9:\"user_data\";s:0:\"\";s:12:\"login_status\";b:1;s:10:\"first_name\";s:7:\"Barbara\";s:11:\"other_names\";s:15:\"Wanjiku Gitonga\";s:8:\"username\";s:7:\"Barbara\";s:12:\"personnel_id\";s:1:\"4\";s:9:\"branch_id\";s:1:\"2\";s:11:\"branch_code\";s:3:\"SSL\";s:16:\"personnel_number\";s:6:\"110220\";s:11:\"branch_name\";s:25:\"Serenity Services Limited\";s:25:\"authorize_invoice_changes\";s:1:\"0\";s:17:\"personnel_type_id\";s:1:\"1\";s:14:\"payroll_search\";s:59:\" AND payroll.payroll_year = \'2016\' AND payroll.month_id = 3\";s:20:\"payroll_search_title\";s:19:\" Payroll for 3/2016\";}');
-INSERT INTO `ci_sessions` VALUES ('cf7f6701f23ced9b4037d5eb871e0249', '::1', 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0', '1459933094', 'a:11:{s:9:\"user_data\";s:0:\"\";s:12:\"login_status\";b:1;s:10:\"first_name\";s:6:\"Alvaro\";s:11:\"other_names\";s:6:\"Alvaro\";s:8:\"username\";s:8:\"amasitsa\";s:17:\"personnel_type_id\";s:1:\"2\";s:12:\"personnel_id\";i:0;s:11:\"branch_code\";s:3:\"SSL\";s:11:\"branch_name\";s:5:\"Omnis\";s:16:\"personnel_number\";s:2:\"00\";s:9:\"branch_id\";i:2;}');
-INSERT INTO `ci_sessions` VALUES ('ddbec69a2b7ab2b844b21377b5ffc200', '196.202.161.122', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36', '1459749520', '');
+INSERT INTO `ci_sessions` VALUES ('b21142f7ccefda03e42a0e631b5c6db6', '::1', 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0', '1460799868', 'a:11:{s:9:\"user_data\";s:0:\"\";s:12:\"login_status\";b:1;s:10:\"first_name\";s:6:\"Alvaro\";s:11:\"other_names\";s:6:\"Alvaro\";s:8:\"username\";s:8:\"amasitsa\";s:17:\"personnel_type_id\";s:1:\"2\";s:12:\"personnel_id\";i:0;s:11:\"branch_code\";s:3:\"OMN\";s:11:\"branch_name\";s:5:\"Omnis\";s:16:\"personnel_number\";s:2:\"00\";s:9:\"branch_id\";i:2;}');
 
 -- ----------------------------
 -- Table structure for `companies`
@@ -1502,20 +1496,11 @@ CREATE TABLE `leave_duration` (
   `created` datetime DEFAULT NULL,
   `last_modified` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`leave_duration_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of leave_duration
 -- ----------------------------
-INSERT INTO `leave_duration` VALUES ('4', '2015-08-14', '2015-08-21', '3', '85', '0', '85', '85', '2015-08-12 15:32:04', null);
-INSERT INTO `leave_duration` VALUES ('2', '2015-08-23', '2015-08-31', '1', '92', '1', '85', '85', '2015-08-12 15:06:10', null);
-INSERT INTO `leave_duration` VALUES ('5', '2015-09-01', '2015-09-08', '3', '85', '0', '85', '85', '2015-08-12 15:33:23', null);
-INSERT INTO `leave_duration` VALUES ('6', '2015-08-17', '2015-08-21', '4', '93', '0', '85', '85', '2015-08-13 14:05:21', null);
-INSERT INTO `leave_duration` VALUES ('7', '2015-11-04', '2015-11-15', '4', '4', '0', '35', '35', '2015-10-28 13:29:38', null);
-INSERT INTO `leave_duration` VALUES ('8', '2016-09-08', '2016-09-13', '4', '3', '0', '4', '4', '2016-01-28 05:15:12', null);
-INSERT INTO `leave_duration` VALUES ('9', '2016-12-12', '2016-12-30', '4', '3', '0', '4', '4', '2016-01-28 05:24:20', null);
-INSERT INTO `leave_duration` VALUES ('10', '2016-03-25', '2016-03-29', '4', '2', '0', '0', '0', '2016-03-29 14:46:55', null);
-INSERT INTO `leave_duration` VALUES ('11', '2016-03-25', '2016-03-29', '4', '0', '0', '0', '0', '2016-03-29 14:48:05', null);
 
 -- ----------------------------
 -- Table structure for `leave_type`
@@ -2019,21 +2004,11 @@ CREATE TABLE `personnel` (
   `personnel_type_id` int(11) DEFAULT '1',
   `image` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`personnel_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of personnel
 -- ----------------------------
-INSERT INTO `personnel` VALUES ('1', 'Sato', 'Caroline', '1988-06-12', 'satokaroline@gmail.com', '0705858898', '23075', 'Gitaru, Naivasha Highway, Kikuyu', '1', '3', '2', 'csato', 'e10adc3949ba59abbe56e057f20f883e', null, null, null, null, null, '1', '0', '', '', '0', '2016-03-29 12:34:07', null, null, null, '2016-03-29 19:34:07', '110210', '00604', 'Gitaru, Naivasha Highway, Kiku', '1', '2', '0', '01108169741200', '2004730879', 'A007929762V', '5094599', '25422711', '1', null);
-INSERT INTO `personnel` VALUES ('2', 'Adera Baraza', 'Kevin', '1982-12-26', 'kevin@serenityservices.co.ke', '0721101245', '21316', 'Kibera Stn Rd, Jamuhuri Hse. no.4', '2', '1', '1', 'kevin', 'e10adc3949ba59abbe56e057f20f883e', null, null, null, null, null, '1', '0', '', '', '0', '2016-03-30 02:19:27', null, null, null, '2016-03-30 09:19:27', '110130', '00100', 'Kibera Stn Rd, Jamuhuri Hse. n', '1', '2', '0', 'Equity BAnk, Moi Avenue, 02601', '525242929', 'A0033236585', 'R154870', '22552230', '1', null);
-INSERT INTO `personnel` VALUES ('3', 'Oluoch Baraza', 'Moses', '1980-09-08', 'moses@serenityservices.co.ke', '0727559609', '', 'Jamuhuri, Haliquins Court', '2', '1', '1', null, 'e10adc3949ba59abbe56e057f20f883e', null, null, null, null, null, '1', '0', '', '', '0', null, null, null, null, '2016-03-31 12:26:02', '110140', '', 'Jamuhuri, Haliquins Court', '1', '2', '0', 'KCB, Sarit Center,1106904842', '156340917', 'A00463711P', 'R1906031', '23012741', '1', null);
-INSERT INTO `personnel` VALUES ('4', 'Wanjiku Gitonga', 'Barbara', '1963-12-20', 'bwkirimi@yahoo.com', '0722708135', '72858', 'Karuna Close,  Apart. 17', '2', '2', '2', 'Barbara', '41e29a1196ae06260dd5752a52c92984', null, null, null, null, null, '1', '0', '', '', '0', '2016-04-04 01:59:09', null, null, null, '2016-04-04 08:59:09', '110220', '00200', 'Nairobi', '1', '2', '0', 'NIC, Westlands, 1000191244', '251156818', 'A001296573B', '0977410', '3137392', '1', null);
-INSERT INTO `personnel` VALUES ('5', 'Lukoko', 'Hillary', '1983-08-20', 'hillumba@yahoo.com', '0705902649', '100', 'G.S.U. Camp Karbanet Rd', '2', '1', '1', null, 'e10adc3949ba59abbe56e057f20f883e', null, null, null, null, null, '0', '0', '', '', '0', null, null, null, null, '2016-02-29 10:08:44', '110340', '50101', 'G.S.U. Camp Karbanet Rd', '1', '2', '0', 'Family Bank, KTDA, 03800002933', '711642915', 'A004027647S', '3461825', '22881098', '1', null);
-INSERT INTO `personnel` VALUES ('6', 'Nyaboke Oganda', 'Irene', '1982-01-01', '', '0710235905', '', 'Kibera', '1', '2', '2', null, 'e10adc3949ba59abbe56e057f20f883e', null, null, null, null, null, '1', '0', '', '', '0', null, null, null, null, '2016-01-28 14:24:12', '110250', '', 'Nairobi', '1', '2', '0', 'Equity Bank, Kilimani,14501644', '660350815', 'A008614105M', '5531781', '23799847', '1', null);
-INSERT INTO `personnel` VALUES ('7', 'Mumbua Muinde', 'Grace', '1992-09-12', 'gracemuinde6@gmail.com', '0707674178', '4405', 'Thika', '1', '3', '2', null, 'e10adc3949ba59abbe56e057f20f883e', null, null, null, null, null, '1', '0', '', '', '0', null, null, null, null, '2016-04-06 12:44:23', '110211', '01000', 'Thika', '1', '2', '0', '01108177764800', '2009214727', 'A009004604W', '', '29359957', '1', 'e4ff92e6c696d28b65e3ef0f8716b1d5.jpg');
-INSERT INTO `personnel` VALUES ('8', 'Masila Mutoko', 'Nicholas', '1965-01-01', 'festusmutoko@yahoo.com', '0721602902', '361', 'Langata, Otiende Shopping Center', '2', '1', '1', null, 'e10adc3949ba59abbe56e057f20f883e', null, null, null, null, null, '1', '0', '', '', '0', null, null, null, null, '2016-01-28 14:42:20', '110440', '', 'Toani', '1', '2', '0', 'K- rep, Kenyatta Market, 01407', '754537625', 'A002410603V', '1232472', '7808428', '1', null);
-INSERT INTO `personnel` VALUES ('9', 'Kaleha Kaisha', 'Laura', '1990-08-18', 'laura.kaisha@gmail.com', '0714778570', 'P. O. Box 3111 ', 'roysambu, Thika Road, Nairobi', '1', '3', '2', null, 'e10adc3949ba59abbe56e057f20f883e', null, null, null, null, null, '1', '0', '', '', '0', null, null, null, null, '2016-03-01 16:04:30', '', '30100', 'roysambu, Thika Road, Nairobi', '1', '3', '1', '', '2007057312', '', '5497239', '28140693', '1', null);
-INSERT INTO `personnel` VALUES ('10', 'Oduori', 'Patrick', '1969-02-12', 'info@serenityservices.co.ke', '0706560509', '4390', 'kibera Highrise', '2', '1', '1', 'Patrick', 'e10adc3949ba59abbe56e057f20f883e', null, null, null, null, null, '1', '0', '', '', '0', null, null, null, null, '2016-03-31 12:53:01', '', '00506', 'kibera Highrise', '1', '2', '0', '046000025240', '067911927', 'A002122361A', '0257979', '9803775', '1', null);
 
 -- ----------------------------
 -- Table structure for `personnel_allowance`
@@ -2145,16 +2120,11 @@ CREATE TABLE `personnel_dependant` (
   `last_modified` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `personnel_id` int(11) NOT NULL,
   PRIMARY KEY (`personnel_dependant_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of personnel_dependant
 -- ----------------------------
-INSERT INTO `personnel_dependant` VALUES ('1', 'Akinyi Oduoki', 'Joy', 'info@serenityservices.co.ke', '0716799478', 'Funyala', '3', '2', '6', '1', '4', '4', '2016-03-31 05:56:57', '2016-03-31 12:56:57', '10');
-INSERT INTO `personnel_dependant` VALUES ('2', 'Nyabwine Oduuori', 'Briget', 'info@serenityservices.co.ke', '0716799478', 'Funyala', '3', '2', '6', '1', '4', '4', '2016-03-31 05:58:40', '2016-03-31 12:58:40', '10');
-INSERT INTO `personnel_dependant` VALUES ('3', 'Ojiambo Oduori', 'John', 'info@serenityservices.co.ke', '0716799478', 'Funyala', '1', '1', '5', '1', '4', '4', '2016-03-31 05:59:55', '2016-03-31 12:59:55', '10');
-INSERT INTO `personnel_dependant` VALUES ('4', 'Adeti Oduori', 'Sylvia ', 'info@serenityservices.co.ke', '0716799478', 'Funyala', '3', '2', '6', '1', '4', '4', '2016-03-31 06:01:14', '2016-03-31 13:01:14', '10');
-INSERT INTO `personnel_dependant` VALUES ('5', 'Ajiambo', 'Bevaline', 'info@serenityservices.co.ke', '0716799478', 'Funyala', '3', '2', '6', '1', '4', '4', '2016-03-31 06:02:16', '2016-03-31 13:02:16', '10');
 
 -- ----------------------------
 -- Table structure for `personnel_document_uploads`
@@ -2176,8 +2146,6 @@ CREATE TABLE `personnel_document_uploads` (
 -- ----------------------------
 -- Records of personnel_document_uploads
 -- ----------------------------
-INSERT INTO `personnel_document_uploads` VALUES ('4', 'CV', '7770c85869e25fc70661d658b374b66a.pdf', '7', '1', '0', '2016-04-06 11:45:32', '0', null);
-INSERT INTO `personnel_document_uploads` VALUES ('5', 'Transcripts', '6147b1387b30169540043f1e9ad3771a.pdf', '7', '1', '0', '2016-04-06 11:51:41', '0', null);
 
 -- ----------------------------
 -- Table structure for `personnel_emergency`
@@ -2200,12 +2168,11 @@ CREATE TABLE `personnel_emergency` (
   `last_modified` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `personnel_id` int(11) NOT NULL,
   PRIMARY KEY (`personnel_emergency_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of personnel_emergency
 -- ----------------------------
-INSERT INTO `personnel_emergency` VALUES ('1', 'Dorothy Oduke', 'Clarence', 'info@serenityservices.co.ke', '0716799478', 'Funyala', '2', '2', '10', '1', '4', '4', '2016-03-31 05:55:11', '2016-03-31 12:55:11', '10');
 
 -- ----------------------------
 -- Table structure for `personnel_job`
@@ -2223,12 +2190,11 @@ CREATE TABLE `personnel_job` (
   `job_commencement_date` date DEFAULT NULL,
   `department_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`personnel_job_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of personnel_job
 -- ----------------------------
-INSERT INTO `personnel_job` VALUES ('1', '10', '12', '1', '2016-03-31 06:11:28', '2016-03-31 13:11:28', '4', '4', '2016-03-03', '1');
 
 -- ----------------------------
 -- Table structure for `personnel_other_deduction`
@@ -2242,13 +2208,11 @@ CREATE TABLE `personnel_other_deduction` (
   `personnel_other_deduction_date` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `personnel_other_deduction_status` tinyint(1) DEFAULT '1',
   PRIMARY KEY (`personnel_other_deduction_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of personnel_other_deduction
 -- ----------------------------
-INSERT INTO `personnel_other_deduction` VALUES ('2', '5', '1', '1000', '2016-01-28 12:51:24', '1');
-INSERT INTO `personnel_other_deduction` VALUES ('5', '10', '1', '2000', '2016-03-31 13:17:45', '1');
 
 -- ----------------------------
 -- Table structure for `personnel_payment`
@@ -2262,21 +2226,11 @@ CREATE TABLE `personnel_payment` (
   `personnel_payment_date` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `personnel_payment_status` tinyint(1) DEFAULT '1',
   PRIMARY KEY (`personnel_payment_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of personnel_payment
 -- ----------------------------
-INSERT INTO `personnel_payment` VALUES ('1', '2', '1', '100000', '2016-01-28 12:40:34', '1');
-INSERT INTO `personnel_payment` VALUES ('2', '5', '1', '17000', '2016-01-28 12:51:12', '1');
-INSERT INTO `personnel_payment` VALUES ('3', '8', '1', '20000', '2016-01-28 12:57:37', '1');
-INSERT INTO `personnel_payment` VALUES ('4', '7', '1', '25000', '2016-01-28 12:59:16', '1');
-INSERT INTO `personnel_payment` VALUES ('5', '6', '1', '18000', '2016-01-28 13:00:58', '1');
-INSERT INTO `personnel_payment` VALUES ('6', '3', '1', '70000', '2016-01-28 13:02:05', '1');
-INSERT INTO `personnel_payment` VALUES ('7', '1', '1', '30000', '2016-01-28 13:03:37', '1');
-INSERT INTO `personnel_payment` VALUES ('9', '4', '1', '30000', '2016-01-28 13:04:19', '1');
-INSERT INTO `personnel_payment` VALUES ('10', '9', '1', '10000', '2016-03-01 15:51:11', '1');
-INSERT INTO `personnel_payment` VALUES ('11', '10', '1', '18000', '2016-03-31 13:17:29', '1');
 
 -- ----------------------------
 -- Table structure for `personnel_relief`
@@ -2368,18 +2322,11 @@ CREATE TABLE `personnel_section` (
   `deleted_on` datetime DEFAULT NULL,
   `deleted_by` int(11) DEFAULT NULL,
   PRIMARY KEY (`personnel_section_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of personnel_section
 -- ----------------------------
-INSERT INTO `personnel_section` VALUES ('1', '4', '14', '0', '0', '2016-01-28 04:29:18', '2016-01-28 06:29:18', '0', null, null);
-INSERT INTO `personnel_section` VALUES ('2', '4', '19', '0', '0', '2016-01-28 04:29:34', '2016-01-28 06:29:34', '0', null, null);
-INSERT INTO `personnel_section` VALUES ('3', '4', '127', '0', '0', '2016-01-28 04:30:07', '2016-01-28 06:30:07', '0', null, null);
-INSERT INTO `personnel_section` VALUES ('4', '9', '90', '4', '4', '2016-03-01 07:47:45', '2016-03-01 09:47:45', '0', null, null);
-INSERT INTO `personnel_section` VALUES ('5', '1', '14', '0', '0', '2016-03-23 09:43:20', '2016-03-23 11:43:20', '0', null, null);
-INSERT INTO `personnel_section` VALUES ('7', '2', '19', '0', '0', '2016-03-30 02:18:46', '2016-03-30 03:18:46', '0', null, null);
-INSERT INTO `personnel_section` VALUES ('8', '2', '127', '0', '0', '2016-03-30 02:19:12', '2016-03-30 03:19:12', '0', null, null);
 
 -- ----------------------------
 -- Table structure for `personnel_store`
@@ -2437,136 +2384,11 @@ CREATE TABLE `petty_cash` (
   `branch_code` varchar(10) NOT NULL DEFAULT 'OSH',
   `is_synced` int(11) DEFAULT '0',
   PRIMARY KEY (`petty_cash_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=133 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of petty_cash
 -- ----------------------------
-INSERT INTO `petty_cash` VALUES ('1', 'Petty cash reimbursement (cheque no. 456)', '20000', '2015-09-17', '1', '11', '1', '2015-10-30 10:10:20', '14', '2015-11-01 12:54:15', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('2', 'Fare to and from Nyamira', '220', '2015-09-17', '1', '7', '2', '2015-10-30 10:13:20', '14', '2015-10-30 18:41:34', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('3', 'Purchase of sugar, milk and bread', '570', '2015-09-17', '1', '2', '2', '2015-10-30 10:15:54', '14', '2015-10-30 18:41:45', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('4', 'Posting of claims voucher no.003', '2720', '2015-09-18', '1', '5', '2', '2015-10-30 10:17:51', '14', '2015-10-30 18:41:54', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('5', 'Purchase of bread', '100', '2015-09-19', '1', '2', '2', '2015-10-30 10:20:08', '14', '2015-10-30 18:42:00', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('6', 'Fare to and from naivas to refill gas cylinder', '50', '2015-09-19', '1', '7', '2', '2015-10-30 10:21:30', '14', '2015-10-30 18:42:10', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('7', 'Fare to and from level vi to refill oxygen cylinder', '100', '2015-09-21', '1', '7', '2', '2015-10-30 10:24:11', '14', '2015-10-30 18:42:18', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('8', 'Purchase of bread', '100', '2015-09-21', '1', '2', '2', '2015-10-30 10:25:17', '14', '2015-10-30 18:42:26', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('9', 'Purchase of airtime invoice no.009', '1000', '2015-09-22', '1', '5', '2', '2015-10-30 10:27:03', '14', '2015-10-30 18:42:34', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('10', 'upkeep money for the system guys invoice no.010', '5000', '2015-09-22', '1', '7', '2', '2015-10-30 10:28:33', '14', '2015-10-30 18:43:21', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('11', 'Locum services invoice no.011', '900', '2015-09-22', '1', '2', '2', '2015-10-30 10:30:08', '14', '2015-10-30 18:43:25', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('12', 'Purchase of bread', '100', '2015-09-22', '1', '2', '2', '2015-10-30 10:31:01', '14', '2015-10-30 18:43:33', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('13', 'Fare to and from naivas to refill the gas cylinder voucher no.014', '50', '0000-00-00', '0', '2', '2', '2015-10-30 10:34:30', '14', '2015-11-01 15:33:22', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('14', 'Purchase of wimbi voucher no.015', '900', '2015-09-23', '1', '2', '2', '2015-10-30 10:35:20', '14', '2015-10-30 18:44:01', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('15', 'Purchase of trunking pipes voucher no.016', '450', '2015-09-24', '1', '1', '2', '2015-10-30 10:37:05', '14', '2015-10-30 18:44:09', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('16', 'Start up of email by sasahost limited  voucher no.017', '3555', '2015-09-23', '1', '1', '2', '2015-10-30 10:39:51', '14', '2015-10-30 18:44:23', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('17', 'Purchase of conta and mini trunk voucher no.018', '500', '2015-09-23', '1', '1', '2', '2015-10-30 10:41:20', '14', '2015-10-30 18:44:27', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('18', 'Fare to and from banking voucher no.019', '50', '2015-09-23', '1', '7', '2', '2015-10-30 10:42:39', '14', '2015-10-30 18:44:34', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('19', 'Purchase of medicotts voucher no.020', '285', '2015-09-24', '1', '8', '2', '2015-10-30 10:44:18', '14', '2015-10-30 18:44:40', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('20', 'Petty cash reimbursement (cheque no.464)', '20000', '2015-09-25', '1', '11', '1', '2015-10-30 10:48:59', '14', '2015-10-30 12:48:59', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('21', 'Purchase of trunking, single patters and conta voucher no.022', '1050', '2015-09-25', '1', '1', '2', '2015-10-30 10:50:51', '14', '2015-10-30 18:44:45', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('22', 'Still birth disposal voucher no.026', '1000', '2015-09-25', '1', '3', '2', '2015-10-30 10:51:53', '14', '2015-10-30 18:44:54', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('23', 'Purchase of bread voucher no. 021', '88', '0000-00-00', '0', '2', '2', '2015-10-30 10:52:39', '14', '2015-11-01 15:33:19', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('24', 'Posting of CIC claim forms voucher no.023', '340', '2015-09-28', '1', '5', '2', '2015-10-30 10:53:49', '14', '2015-10-30 18:45:03', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('25', 'Fare to and from st. judes for lab test voucher no. 025', '400', '2015-08-28', '0', '6', '2', '2015-10-30 10:55:04', '14', '2015-11-01 15:33:17', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('26', 'Fare to and from Nyamira (Sharon) invoice no.027', '220', '2015-09-29', '1', '7', '2', '2015-10-30 10:56:20', '14', '2015-10-30 18:45:20', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('27', 'Purchase of syscans i.v voucher no.028', '330', '2015-09-29', '1', '8', '2', '2015-10-30 10:57:25', '14', '2015-10-30 18:45:24', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('28', 'Purchase of 40 liters of diesel and fare voucher no.029', '3370', '2015-09-29', '1', '9', '2', '2015-10-30 10:58:23', '14', '2015-10-30 18:45:31', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('29', 'INR/PTI sample to st. Judes voucher no. 024', '400', '2015-09-29', '1', '6', '2', '2015-10-30 10:59:28', '14', '2015-10-30 18:45:48', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('30', 'Fridge delivered to nakumatt for repair voucher no. 030', '200', '2015-09-30', '1', '1', '2', '2015-10-30 11:01:00', '14', '2015-10-30 18:46:07', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('31', 'Purchase of cassava voucher no. 031', '100', '2015-09-30', '1', '2', '2', '2015-10-30 11:01:53', '14', '2015-10-30 18:46:15', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('32', 'Poshomill voucher no. 032', '60', '2015-09-30', '1', '2', '2', '2015-10-30 11:02:36', '14', '2015-10-30 18:46:19', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('33', 'Purchase of airtime invoice no.033', '1000', '2015-09-30', '1', '5', '2', '2015-10-30 11:03:27', '14', '2015-10-30 18:46:24', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('34', 'Purchase of drugs voucher no. 074', '920', '2015-09-30', '1', '8', '2', '2015-10-30 11:04:17', '14', '2015-10-30 18:46:27', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('35', 'Purchase of syscans i.v voucher no.035', '660', '2015-09-30', '1', '8', '2', '2015-10-30 11:05:08', '14', '2015-10-30 18:46:29', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('36', 'Refund to Atera for purchase of drugs voucher no.034', '70', '2015-10-02', '1', '8', '2', '2015-10-30 11:06:24', '14', '2015-10-30 18:46:32', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('37', 'Purchase of drugs voucher no. 036', '5000', '2015-10-02', '1', '8', '2', '2015-10-30 11:09:45', '14', '2015-10-30 18:46:40', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('38', 'Posting of claim forms voucher no. 040', '2680', '2015-10-03', '1', '5', '2', '2015-10-30 11:10:56', '14', '2015-10-30 18:46:44', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('39', 'Purchase of drugs', '420', '2015-10-03', '1', '8', '2', '2015-10-30 11:12:32', '14', '2015-10-30 18:46:46', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('40', 'Purchase of sukumawiki voucher no. 037', '50', '2015-10-04', '1', '2', '2', '2015-10-30 11:14:00', '14', '2015-10-30 18:46:49', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('41', 'Purchase of bread voucher no.038', '90', '2015-10-04', '1', '2', '2', '2015-10-30 11:14:59', '14', '2015-10-30 18:46:51', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('42', 'Purchase of drugs voucher no.041', '290', '2015-10-06', '1', '8', '2', '2015-10-30 11:16:20', '14', '2015-10-30 18:46:56', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('43', 'Purchase of airtime voucher no. 042', '500', '2015-10-06', '1', '5', '2', '2015-10-30 11:17:52', '14', '2015-10-30 18:47:00', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('44', 'Purchase of bread voucher no. 043', '100', '2015-10-09', '1', '2', '2', '2015-10-30 11:18:30', '14', '2015-10-30 18:47:03', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('45', 'Purchase of bread voucher no. 044', '100', '2015-10-10', '1', '2', '2', '2015-10-30 11:19:19', '14', '2015-10-30 18:47:05', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('46', 'Purchase of bread voucher no. 045', '86', '2015-10-11', '1', '2', '2', '2015-10-30 11:19:56', '14', '2015-10-30 18:47:16', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('47', 'Purchase of bread voucher no. 046', '100', '2015-10-12', '1', '2', '2', '2015-10-30 11:20:38', '14', '2015-10-30 18:47:22', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('48', 'Purchase of aitime voucher no. 047', '50', '2015-10-12', '1', '5', '2', '2015-10-30 11:21:20', '14', '2015-10-30 18:47:25', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('49', 'Petty cash reimbursement (cheque no.492)', '20000', '2015-10-13', '1', '11', '1', '2015-10-30 11:23:58', '14', '2015-10-30 13:23:58', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('50', 'Purchase of bread voucher no. 048', '106', '2015-10-13', '1', '2', '2', '2015-10-30 11:24:52', '14', '2015-10-30 18:47:31', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('51', 'Purchase of cassava and milling voucher no. 049', '130', '2015-10-14', '1', '2', '2', '2015-10-30 11:25:41', '14', '2015-10-30 18:47:35', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('52', 'Purchase of bread, Golden fry, jogoo maize, water and fare voucher no. 050', '965', '2015-10-14', '1', '2', '2', '2015-10-30 11:27:19', '14', '2015-10-30 18:47:51', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('53', 'Purchase of airtime voucher no. 051', '100', '2015-10-14', '1', '5', '2', '2015-10-30 11:27:57', '14', '2015-10-30 18:48:13', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('54', 'Purchase of adult pampers and packing bags voucher no. 052', '1080', '2015-10-14', '1', '8', '2', '2015-10-30 11:29:11', '14', '2015-10-30 18:48:24', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('55', 'Purchase of kitchen items voucher no. 053', '8435', '2015-10-15', '1', '2', '2', '2015-10-30 11:30:02', '14', '2015-10-30 18:48:37', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('56', 'Purchase of airtime voucher no. 054', '900', '2015-10-15', '1', '5', '2', '2015-10-30 11:30:39', '14', '2015-10-30 18:48:40', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('57', 'Purchase of drugs voucher no. 055', '4345', '2015-10-15', '1', '8', '2', '2015-10-30 11:31:28', '14', '2015-10-30 18:48:50', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('58', 'Fare to and from Nyamira voucher no. 056', '220', '2015-10-16', '1', '7', '2', '2015-10-30 11:33:02', '14', '2015-10-30 18:49:03', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('59', 'Posting of letter to NITA voucher no. 073', '50', '2015-10-14', '1', '5', '2', '2015-10-30 11:35:53', '14', '2015-10-30 18:49:09', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('60', 'Purchase of fuse voucher no. 057', '500', '2015-10-16', '1', '1', '2', '2015-10-30 11:36:42', '14', '2015-10-30 18:49:17', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('61', 'Purchase of drugs voucher no.058', '200', '2015-10-16', '1', '8', '2', '2015-10-30 11:39:09', '14', '2015-10-30 18:50:10', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('62', 'Purchase of bread voucher no. 059', '94', '2015-10-16', '1', '2', '2', '2015-10-30 11:40:09', '14', '2015-10-30 18:50:15', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('63', 'Labour for repair of generator voucher no. 060', '500', '2015-10-16', '1', '9', '2', '2015-10-30 11:41:36', '14', '2015-10-30 18:58:38', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('64', 'Purchase of tomatoes voucher no. 065', '40', '2015-10-16', '1', '2', '2', '2015-10-30 11:42:13', '14', '2015-10-30 18:58:50', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('65', 'Purchase of bread voucher no. 064', '98', '2015-10-17', '1', '2', '2', '2015-10-30 11:42:50', '14', '2015-10-30 18:58:52', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('66', 'Printing and photocopying services voucher no. 063', '120', '2015-10-18', '1', '1', '2', '2015-10-30 11:43:49', '14', '2015-10-30 18:59:01', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('67', 'Purchase of drugs voucher no. 061', '960', '2015-10-18', '1', '8', '2', '2015-10-30 11:44:28', '14', '2015-10-30 18:59:03', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('68', 'Purchase of drugs voucher no. 062', '200', '2015-10-18', '1', '8', '2', '2015-10-30 11:45:06', '14', '2015-10-30 18:59:07', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('69', 'Repair of printer machine voucher no. 067', '200', '2015-10-18', '1', '1', '2', '2015-10-30 11:46:21', '14', '2015-10-30 18:59:11', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('70', 'Fare to and from mosocho (Lilian Okengo) voucher no. 068', '200', '2015-10-19', '1', '7', '2', '2015-10-30 11:47:26', '14', '2015-10-30 18:59:17', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('71', 'Purchase of steel nails voucher no. 069', '100', '2015-10-19', '1', '1', '2', '2015-10-30 11:48:11', '14', '2015-10-30 18:59:21', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('72', 'Purchase of bread voucher no. 070', '90', '2015-10-20', '1', '2', '2', '2015-10-30 11:48:55', '14', '2015-10-30 18:59:23', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('73', 'Purchase of airtime voucher no. 071', '200', '2015-10-20', '1', '5', '2', '2015-10-30 11:49:52', '14', '2015-10-30 18:59:27', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('74', 'Purchase of bread voucher no. 072', '80', '2015-10-20', '1', '2', '2', '2015-10-30 11:50:25', '14', '2015-10-30 18:59:29', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('75', 'Petty cash reimbursement (cheque no.513)', '19980', '2015-10-21', '1', '11', '1', '2015-10-30 11:55:52', '14', '2015-10-30 13:55:52', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('76', 'Purchase of bread voucher no. 075', '89', '2015-10-21', '1', '2', '2', '2015-10-30 11:56:51', '14', '2015-10-30 18:59:37', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('77', 'Purchase of bread voucher no. 076', '88', '2015-10-23', '1', '2', '2', '2015-10-30 11:57:31', '14', '2015-10-30 18:59:41', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('78', 'Purchase of vegetable oil voucher no. 077', '483', '2015-10-23', '1', '2', '2', '2015-10-30 11:58:18', '14', '2015-10-30 18:59:45', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('79', 'Fare to and from Nyamira voucher no. 078', '220', '2015-10-23', '1', '7', '2', '2015-10-30 11:59:28', '14', '2015-10-30 19:00:15', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('80', 'Generator repair', '2800', '2015-10-23', '1', '9', '2', '2015-10-30 12:02:01', '14', '2015-10-30 19:00:20', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('81', 'Purchase of wimbi, cassava and poshomill voucher no. 080', '540', '2015-10-23', '1', '2', '2', '2015-10-30 12:02:58', '14', '2015-10-30 19:00:22', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('82', 'Purchase of drugs voucher no. 081', '120', '2015-10-24', '1', '8', '2', '2015-10-30 12:03:44', '14', '2015-10-30 19:00:24', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('83', 'Purchase of 42 liters of diesel and fare voucher no. 082', '3650', '2015-10-25', '1', '9', '2', '2015-10-30 12:04:52', '14', '2015-10-30 19:00:26', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('84', 'Purchase of airtime voucher no. 083', '1000', '2015-10-24', '1', '5', '2', '2015-10-30 12:05:33', '14', '2015-10-30 19:00:29', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('85', 'Purchase of wimbi, cassava, poshomill and fare voucher no. 084', '1140', '2015-10-25', '1', '2', '2', '2015-10-30 12:06:39', '14', '2015-10-30 19:00:31', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('86', 'Fare to and from level vi for oxygen refill', '200', '2015-10-27', '1', '10', '2', '2015-10-30 12:07:32', '14', '2015-10-30 19:00:39', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('87', 'Purchase of bread voucher no. 088', '100', '2015-10-26', '1', '2', '2', '2015-10-30 12:08:07', '14', '2015-10-30 19:00:42', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('88', 'Fare to and from banking voucher no. 087', '60', '2015-10-27', '1', '7', '2', '2015-10-30 12:08:46', '14', '2015-10-30 19:00:48', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('89', 'Purchase of charger voucher no. 086', '150', '2015-10-27', '1', '5', '2', '2015-10-30 12:36:05', '14', '2015-10-30 19:00:58', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('90', 'Purchase of conta voucher no. 091', '1550', '2015-10-28', '1', '1', '2', '2015-10-30 12:36:43', '14', '2015-10-30 19:01:01', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('91', 'Purchase of row bolt voucher no. 092', '400', '2015-10-28', '1', '1', '2', '2015-10-30 12:37:45', '14', '2015-10-30 19:01:12', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('92', 'Purchase of drugs voucher no. 093', '800', '2015-10-28', '1', '8', '2', '2015-10-30 12:38:22', '14', '2015-10-30 19:01:16', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('93', 'Purchase of 20 liters of diesel and fare voucher no. 094', '1720', '2015-10-28', '1', '9', '2', '2015-10-30 12:39:13', '14', '2015-10-30 19:01:24', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('94', 'Refill of 13 kg gas cylinder and fare voucher no. 095', '1180', '2015-10-29', '1', '2', '2', '2015-10-30 12:40:21', '14', '2015-10-30 19:01:28', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('95', 'Purchase of airtime voucher no. 096', '1000', '2015-10-30', '1', '5', '2', '2015-10-30 12:41:02', '14', '2015-10-30 19:01:40', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('96', 'Fare to and from level vi for oxygen refill voucher no.097', '200', '2015-10-30', '1', '10', '2', '2015-10-30 12:42:01', '14', '2015-10-30 19:01:47', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('97', 'Purchase of 42 liters of fuel and fare voucher no. 013', '3650', '2015-09-22', '1', '9', '2', '2015-10-30 12:48:16', '14', '2015-10-30 19:01:58', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('98', 'Fare to and from naivas to refill gas cylinder voucher no. 014', '50', '2015-09-23', '1', '2', '2', '2015-10-30 12:49:33', '14', '2015-10-30 19:02:13', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('103', 'Posting of claims voucher no.89', '2380', '2015-10-27', '1', '5', '2', '2015-10-30 19:01:12', '14', '2015-10-30 21:01:12', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('104', 'Purchase of bread voucher no. 090', '100', '2015-10-27', '1', '2', '2', '2015-10-30 19:02:08', '14', '2015-10-30 21:02:08', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('105', 'Purchase of Bread voucher No. 066', '89', '2015-10-18', '1', '2', '2', '2015-10-30 19:49:09', '14', '2015-10-30 21:49:09', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('108', 'Purchase of Bread voucher no. 021', '88', '2015-09-27', '1', '2', '2', '2015-10-30 19:57:49', '14', '2015-10-30 21:58:25', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('109', 'Fare to and From St. Judes voucher no. 025', '400', '2015-09-28', '1', '7', '2', '2015-10-30 20:00:26', '14', '2015-10-30 22:00:26', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('111', 'Purchase of bread voucher no. 103', '178', '2015-11-02', '1', '2', '2', '2015-11-06 18:05:35', '14', '2015-11-06 20:05:35', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('112', 'Petty cash reimbursement cheque no. 544', '19970', '2015-11-01', '1', '11', '1', '2015-11-06 18:12:00', '14', '2015-11-06 20:12:00', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('113', 'Purchase of packing bags voucher no. 104', '80', '2015-11-02', '1', '8', '2', '2015-11-06 18:17:41', '14', '2015-11-06 20:17:41', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('114', 'Purchase of drugs voucher no. 105', '810', '2015-11-05', '1', '8', '2', '2015-11-06 18:21:13', '14', '2015-11-06 20:21:13', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('115', 'Purchase of airtime voucher no. 106', '1000', '2015-11-06', '1', '5', '2', '2015-11-06 18:22:32', '14', '2015-11-06 20:22:32', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('116', 'Fare to and from Nyamira voucher no. 107', '220', '2015-11-06', '1', '7', '2', '2015-11-06 18:23:22', '14', '2015-11-06 20:23:22', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('117', 'Purchase of mixavit drops voucher no. 108', '500', '2015-11-07', '1', '8', '2', '2015-11-07 15:31:06', '14', '2015-11-07 17:31:06', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('118', 'Fare to and from Nyamache to bring lab reagents voucher no. 109', '100', '2015-11-08', '1', '6', '2', '2015-11-08 15:54:47', '14', '2015-11-08 17:54:47', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('119', 'Purchase of drugs voucher no. 110', '1630', '2015-11-08', '1', '8', '2', '2015-11-08 15:56:21', '14', '2015-11-08 17:56:21', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('120', 'Purchase of bread voucher no. 111', '86', '2015-11-08', '1', '2', '2', '2015-11-12 08:52:32', '14', '2015-11-12 10:52:32', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('121', 'Purchase of diesel and fare voucher no. 112', '3370', '2015-11-09', '1', '9', '2', '2015-11-12 08:53:26', '14', '2015-11-12 10:53:26', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('122', 'Purchase of hub swabs voucher no. 113', '100', '2015-11-09', '1', '6', '2', '2015-11-12 08:54:52', '14', '2015-11-12 10:54:52', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('123', 'Gas refill and fare voucher no. 114', '2560', '2015-11-11', '1', '2', '2', '2015-11-12 08:55:44', '14', '2015-11-12 10:55:44', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('124', 'Posting of claim forms voucher no. 115', '2380', '2015-11-11', '1', '5', '2', '2015-11-12 08:56:46', '14', '2015-11-12 10:56:46', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('125', 'Fare from Davis And Shirt lift for the purchase of water pump voucher no. 116', '50', '2015-11-11', '1', '7', '2', '2015-11-12 13:31:51', '14', '2015-11-12 15:31:51', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('126', 'Repair of billboards voucher no. 117', '3500', '2015-11-12', '1', '1', '2', '2015-11-12 13:33:34', '14', '2015-11-12 15:33:34', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('127', 'Purchase of 6 padlocks voucher no. 118', '1380', '2015-11-12', '1', '1', '2', '2015-11-12 15:15:24', '14', '2015-11-12 17:15:24', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('128', 'Purchase of beans voucher no. 119', '400', '2015-11-13', '1', '2', '2', '2015-11-13 13:47:56', '14', '2015-11-13 15:47:56', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('129', 'Purchase of envelopes voucher no. 120', '300', '2015-11-13', '1', '1', '2', '2015-11-13 13:50:42', '14', '2015-11-13 15:50:42', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('130', 'Posting of letter to NITA voucher no. 121', '50', '2015-11-13', '1', '5', '2', '2015-11-13 13:51:50', '14', '2015-11-13 15:51:50', '14', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('131', 'Purchase of airtime voucher no.122', '1000', '2015-11-15', '1', '5', '2', '2015-11-18 10:20:54', '0', '2015-11-18 12:20:54', '0', 'OSH', '0');
-INSERT INTO `petty_cash` VALUES ('132', 'Purchase of bread voucher no. 123', '86', '2015-11-16', '1', '2', '2', '2015-11-18 10:22:08', '0', '2015-11-18 12:22:08', '0', 'OSH', '0');
 
 -- ----------------------------
 -- Table structure for `petty_cash_sync`
@@ -2594,510 +2416,6 @@ CREATE TABLE `petty_cash_sync` (
 -- ----------------------------
 -- Records of petty_cash_sync
 -- ----------------------------
-INSERT INTO `petty_cash_sync` VALUES ('1', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '1', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('2', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '2', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('3', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '3', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('4', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '4', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('5', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '5', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('6', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '6', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('7', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '7', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('8', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '8', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('9', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '9', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('10', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '10', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('11', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '11', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('12', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('13', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('14', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('15', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('16', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('17', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('18', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('19', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('20', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('21', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('22', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('23', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('24', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('25', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('26', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('27', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('28', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('29', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('30', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('31', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('32', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('33', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('34', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('35', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('36', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('37', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('38', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('39', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('40', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('41', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('42', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('43', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('44', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('45', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('46', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('47', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('48', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('49', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('50', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('51', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('52', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('53', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('54', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('55', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('56', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('57', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('58', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('59', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('60', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('61', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('62', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('63', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('64', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('65', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('66', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('67', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('68', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('69', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('70', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('71', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('72', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('73', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('74', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('75', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('76', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('77', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('78', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('79', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('80', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('81', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('82', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('83', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('84', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('85', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('86', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('87', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('88', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('89', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('90', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('91', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('92', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('93', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('94', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('95', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('96', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('97', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('98', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('99', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('100', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('101', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('102', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('103', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('104', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('105', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('106', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('107', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('108', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('109', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('110', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('111', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('112', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('113', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('114', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('115', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('116', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('117', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('118', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('119', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('120', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('121', '2015-11-07 15:10:30', '0', '2015-11-07 17:10:30', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('122', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '1', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('123', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '2', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('124', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '3', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('125', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '4', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('126', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '5', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('127', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '6', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('128', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '7', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('129', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '8', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('130', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '9', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('131', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '10', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('132', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '11', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('133', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('134', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('135', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('136', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('137', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('138', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('139', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('140', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('141', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('142', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('143', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('144', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('145', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('146', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('147', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('148', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('149', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('150', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('151', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('152', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('153', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('154', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('155', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('156', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('157', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('158', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('159', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('160', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('161', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('162', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('163', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('164', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('165', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('166', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('167', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('168', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('169', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('170', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('171', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('172', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('173', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('174', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('175', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('176', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('177', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('178', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('179', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('180', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('181', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('182', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('183', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('184', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('185', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('186', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('187', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('188', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('189', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('190', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('191', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('192', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('193', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('194', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('195', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('196', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('197', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('198', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('199', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('200', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('201', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('202', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('203', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('204', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('205', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('206', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('207', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('208', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('209', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('210', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('211', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('212', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('213', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('214', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('215', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('216', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('217', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('218', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('219', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('220', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('221', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('222', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('223', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('224', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('225', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('226', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('227', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('228', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('229', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('230', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('231', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('232', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('233', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('234', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('235', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('236', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('237', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('238', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('239', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('240', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('241', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('242', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('243', '2015-11-07 15:31:10', '14', '2015-11-07 17:31:10', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('244', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '1', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('245', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '2', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('246', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '3', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('247', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '4', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('248', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '5', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('249', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '6', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('250', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '7', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('251', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '8', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('252', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '9', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('253', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '10', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('254', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '11', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('255', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('256', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('257', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('258', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('259', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('260', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('261', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('262', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('263', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('264', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('265', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('266', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('267', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('268', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('269', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('270', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('271', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('272', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('273', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('274', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('275', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('276', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('277', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('278', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('279', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('280', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('281', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('282', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('283', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('284', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('285', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('286', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('287', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('288', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('289', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('290', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('291', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('292', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('293', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('294', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('295', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('296', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('297', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('298', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('299', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('300', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('301', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('302', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('303', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('304', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('305', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('306', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('307', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('308', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('309', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('310', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('311', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('312', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('313', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('314', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('315', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('316', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('317', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('318', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('319', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('320', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('321', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('322', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('323', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('324', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('325', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('326', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('327', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('328', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('329', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('330', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('331', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('332', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('333', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('334', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('335', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('336', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('337', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('338', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('339', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('340', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('341', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('342', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('343', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('344', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('345', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('346', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('347', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('348', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('349', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('350', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('351', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('352', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('353', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('354', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('355', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('356', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('357', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('358', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('359', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('360', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('361', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('362', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('363', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('364', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('365', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('366', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('367', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('368', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('369', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('370', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('371', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('372', '2015-11-12 09:08:03', '14', '2015-11-12 11:08:03', '14', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('373', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '1', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('374', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '2', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('375', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '3', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('376', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '4', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('377', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '5', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('378', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '6', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('379', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '7', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('380', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '8', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('381', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '9', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('382', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '10', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('383', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '11', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('384', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '1');
-INSERT INTO `petty_cash_sync` VALUES ('385', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('386', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('387', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('388', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('389', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('390', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('391', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('392', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('393', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('394', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('395', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('396', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('397', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('398', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('399', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('400', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('401', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('402', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('403', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('404', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('405', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('406', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('407', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('408', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('409', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('410', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('411', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('412', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('413', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('414', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('415', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('416', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('417', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('418', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('419', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('420', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('421', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('422', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('423', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('424', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('425', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('426', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('427', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('428', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('429', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('430', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('431', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('432', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('433', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('434', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('435', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('436', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('437', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('438', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('439', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('440', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('441', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('442', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('443', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('444', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('445', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('446', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('447', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('448', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('449', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('450', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('451', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('452', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('453', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('454', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('455', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('456', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('457', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('458', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('459', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('460', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('461', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('462', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('463', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('464', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('465', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('466', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('467', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('468', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('469', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('470', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('471', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('472', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('473', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('474', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('475', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('476', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('477', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('478', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('479', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('480', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('481', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('482', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('483', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('484', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('485', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('486', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('487', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('488', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('489', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('490', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('491', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('492', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('493', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('494', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('495', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('496', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('497', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('498', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('499', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('500', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('501', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('502', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('503', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
-INSERT INTO `petty_cash_sync` VALUES ('504', '2015-11-12 18:40:38', '0', '2015-11-12 20:40:38', '0', null, '0', '0', null, '12', null, 'OSH', null, null, '2');
 
 -- ----------------------------
 -- Table structure for `petty_cash_sync_table`
@@ -4119,42 +3437,42 @@ CREATE TABLE `section` (
 -- ----------------------------
 -- Records of section
 -- ----------------------------
-INSERT INTO `section` VALUES ('2', 'Company Profile', '0', '18', '2015-07-28 11:19:00', '2015-08-28 09:19:52', '85', '85', '1', '', '3');
-INSERT INTO `section` VALUES ('14', 'Dashboard', '1', '0', '2015-07-28 11:19:00', '2015-07-29 13:46:55', '85', '85', '1', 'home', '1');
-INSERT INTO `section` VALUES ('16', 'Sections', '1', '18', '2015-07-29 12:45:00', '2015-07-29 14:44:10', '85', '85', '1', 'lock', '1');
-INSERT INTO `section` VALUES ('17', 'Inventory', '0', '0', '2015-07-29 12:38:28', '2016-01-18 16:12:03', '85', '85', null, 'archive', '3');
-INSERT INTO `section` VALUES ('18', 'Administration', '0', '0', '2015-07-29 12:43:53', '2016-01-18 15:59:41', '85', '85', null, 'cog', '1');
-INSERT INTO `section` VALUES ('19', 'Human Resource', '1', '0', '2015-07-29 12:45:03', '2015-07-29 14:45:29', '85', '85', null, 'users', '2');
-INSERT INTO `section` VALUES ('20', 'Personnel', '1', '19', '2015-07-29 12:45:49', '2015-07-29 14:45:49', '85', '85', null, '', '1');
-INSERT INTO `section` VALUES ('21', 'Dashboard', '1', '19', '2015-07-29 13:09:19', '2015-07-29 15:09:19', '85', '85', null, '', '1');
-INSERT INTO `section` VALUES ('22', 'Leave', '1', '19', '2015-07-29 18:15:29', '2015-07-29 20:15:29', '85', '85', null, '', '3');
-INSERT INTO `section` VALUES ('23', 'Configuration', '1', '19', '2015-07-29 18:17:11', '2015-07-29 20:17:11', '85', '85', null, '', '4');
-INSERT INTO `section` VALUES ('25', 'Payroll', '1', '127', '2015-07-29 18:19:04', '2015-10-08 20:09:52', '85', '0', null, '', '2');
-INSERT INTO `section` VALUES ('26', 'Store', '1', '17', '2015-07-29 18:20:29', '2015-07-29 20:20:29', '85', '85', null, '', '1');
-INSERT INTO `section` VALUES ('27', 'Suppliers', '1', '17', '2015-07-29 18:20:50', '2015-07-29 20:20:50', '85', '85', null, '', '3');
-INSERT INTO `section` VALUES ('28', 'Categories', '1', '17', '2015-07-29 18:21:03', '2015-07-29 20:21:03', '85', '85', null, '', '2');
-INSERT INTO `section` VALUES ('29', 'Units Of Measurement', '1', '17', '2015-07-29 18:21:50', '2015-07-29 20:21:50', '85', '85', null, '', '4');
-INSERT INTO `section` VALUES ('30', 'Orders', '1', '17', '2015-07-29 18:28:30', '2015-07-29 20:28:30', '85', '85', null, '', '6');
-INSERT INTO `section` VALUES ('31', 'Requisitions', '1', '17', '2015-07-29 18:28:46', '2015-07-29 20:28:46', '85', '85', null, '', '7');
-INSERT INTO `section` VALUES ('39', 'Configuration', '1', '18', '2015-08-14 12:51:45', '2015-08-14 14:51:45', '85', '85', null, '', '1');
-INSERT INTO `section` VALUES ('40', 'Business Development', '0', '0', '2015-08-14 13:27:01', '2015-08-14 15:27:23', '85', '85', null, 'cog', '6');
-INSERT INTO `section` VALUES ('88', 'Payroll Configuration', '1', '127', '2015-08-24 11:08:42', '2015-10-08 20:09:56', '85', '0', null, '', '2');
-INSERT INTO `section` VALUES ('89', 'Branches', '1', '18', '2015-08-28 07:19:46', '2015-09-02 15:03:36', '85', '85', null, '', '1');
-INSERT INTO `section` VALUES ('90', 'My Account', '1', '19', '2015-09-02 13:22:44', '2015-09-02 15:22:44', '0', '0', null, '', '5');
-INSERT INTO `section` VALUES ('91', 'Services', '0', '18', '2015-09-09 12:43:33', '2015-09-15 18:20:20', '0', '0', null, '', '4');
-INSERT INTO `section` VALUES ('116', 'Inventory Setup', '1', '0', '2015-10-04 15:30:33', '2015-10-04 16:55:56', '0', '0', null, 'cogs', '18');
-INSERT INTO `section` VALUES ('117', 'Inventory Categories', '1', '116', '2015-10-04 15:32:10', '2015-10-04 16:32:10', '0', '0', null, 'cogs', '1');
-INSERT INTO `section` VALUES ('118', 'Inventory Stores', '1', '116', '2015-10-04 15:32:29', '2015-10-04 16:32:29', '0', '0', null, 'cogs', '2');
-INSERT INTO `section` VALUES ('119', 'Suppliers', '1', '116', '2015-10-04 15:32:45', '2015-10-04 16:32:45', '0', '0', null, 'cogs', '3');
-INSERT INTO `section` VALUES ('120', 'Inventory', '1', '0', '2015-10-04 15:34:30', '2015-10-04 16:55:28', '0', '0', null, 'briefcase', '17');
-INSERT INTO `section` VALUES ('121', 'Products', '1', '120', '2015-10-04 15:35:06', '2015-10-04 16:35:06', '0', '0', null, 'briefcase', '1');
-INSERT INTO `section` VALUES ('122', 'Orders', '1', '0', '2015-10-04 15:40:30', '2015-10-04 16:56:28', '0', '0', null, 'shopping-cart', '19');
-INSERT INTO `section` VALUES ('127', 'Accounts', '1', '0', '2015-10-08 19:09:31', '2015-10-08 20:09:31', '0', '0', null, 'money', '6');
-INSERT INTO `section` VALUES ('128', 'Insurance Invoices', '1', '127', '2015-10-08 19:10:39', '2015-10-08 20:10:39', '0', '0', null, '', '3');
-INSERT INTO `section` VALUES ('129', 'Schedules', '1', '19', '2015-10-11 14:59:35', '2015-10-11 15:59:35', '0', '0', null, '', '6');
-INSERT INTO `section` VALUES ('130', 'Petty Cash', '1', '127', '2015-10-17 17:24:35', '2015-10-17 18:24:35', '0', '0', null, '', '4');
-INSERT INTO `section` VALUES ('131', 'Expenditure Accounts', '1', '127', '2015-10-17 17:32:48', '2016-01-18 16:11:14', '0', '0', null, '', '5');
-INSERT INTO `section` VALUES ('132', 'Creditors', '1', '127', '2015-11-10 19:49:31', '2015-11-10 21:49:31', '0', '0', null, '', '6');
+INSERT INTO `section` VALUES ('2', 'Company Profile', '0', '18', '2015-07-28 11:19:00', '2015-08-28 10:19:52', '85', '85', '1', '', '3');
+INSERT INTO `section` VALUES ('14', 'Dashboard', '1', '0', '2015-07-28 11:19:00', '2015-07-29 14:46:55', '85', '85', '1', 'home', '1');
+INSERT INTO `section` VALUES ('16', 'Sections', '1', '18', '2015-07-29 12:45:00', '2015-07-29 15:44:10', '85', '85', '1', 'lock', '1');
+INSERT INTO `section` VALUES ('17', 'Inventory', '0', '0', '2015-07-29 12:38:28', '2016-01-18 18:12:03', '85', '85', null, 'archive', '3');
+INSERT INTO `section` VALUES ('18', 'Administration', '0', '0', '2015-07-29 12:43:53', '2016-01-18 17:59:41', '85', '85', null, 'cog', '1');
+INSERT INTO `section` VALUES ('19', 'Human Resource', '1', '0', '2015-07-29 12:45:03', '2015-07-29 15:45:29', '85', '85', null, 'users', '2');
+INSERT INTO `section` VALUES ('20', 'Personnel', '1', '19', '2015-07-29 12:45:49', '2015-07-29 15:45:49', '85', '85', null, '', '1');
+INSERT INTO `section` VALUES ('21', 'Dashboard', '0', '19', '2015-07-29 13:09:19', '2016-04-15 11:02:42', '85', '85', null, '', '1');
+INSERT INTO `section` VALUES ('22', 'Leave', '1', '19', '2015-07-29 18:15:29', '2015-07-29 21:15:29', '85', '85', null, '', '3');
+INSERT INTO `section` VALUES ('23', 'Configuration', '1', '19', '2015-07-29 18:17:11', '2015-07-29 21:17:11', '85', '85', null, '', '4');
+INSERT INTO `section` VALUES ('25', 'Payroll', '1', '127', '2015-07-29 18:19:04', '2015-10-08 21:09:52', '85', '0', null, '', '2');
+INSERT INTO `section` VALUES ('26', 'Store', '1', '17', '2015-07-29 18:20:29', '2015-07-29 21:20:29', '85', '85', null, '', '1');
+INSERT INTO `section` VALUES ('27', 'Suppliers', '1', '17', '2015-07-29 18:20:50', '2015-07-29 21:20:50', '85', '85', null, '', '3');
+INSERT INTO `section` VALUES ('28', 'Categories', '1', '17', '2015-07-29 18:21:03', '2015-07-29 21:21:03', '85', '85', null, '', '2');
+INSERT INTO `section` VALUES ('29', 'Units Of Measurement', '1', '17', '2015-07-29 18:21:50', '2015-07-29 21:21:50', '85', '85', null, '', '4');
+INSERT INTO `section` VALUES ('30', 'Orders', '1', '17', '2015-07-29 18:28:30', '2015-07-29 21:28:30', '85', '85', null, '', '6');
+INSERT INTO `section` VALUES ('31', 'Requisitions', '1', '17', '2015-07-29 18:28:46', '2015-07-29 21:28:46', '85', '85', null, '', '7');
+INSERT INTO `section` VALUES ('39', 'Configuration', '1', '18', '2015-08-14 12:51:45', '2015-08-14 15:51:45', '85', '85', null, '', '1');
+INSERT INTO `section` VALUES ('40', 'Business Development', '0', '0', '2015-08-14 13:27:01', '2015-08-14 16:27:23', '85', '85', null, 'cog', '6');
+INSERT INTO `section` VALUES ('88', 'Payroll Configuration', '1', '127', '2015-08-24 11:08:42', '2015-10-08 21:09:56', '85', '0', null, '', '2');
+INSERT INTO `section` VALUES ('89', 'Branches', '1', '18', '2015-08-28 07:19:46', '2015-09-02 16:03:36', '85', '85', null, '', '1');
+INSERT INTO `section` VALUES ('90', 'My Account', '1', '19', '2015-09-02 13:22:44', '2015-09-02 16:22:44', '0', '0', null, '', '5');
+INSERT INTO `section` VALUES ('91', 'Services', '0', '18', '2015-09-09 12:43:33', '2015-09-15 19:20:20', '0', '0', null, '', '4');
+INSERT INTO `section` VALUES ('116', 'Inventory Setup', '0', '0', '2015-10-04 15:30:33', '2016-04-15 12:13:10', '0', '0', null, 'cogs', '18');
+INSERT INTO `section` VALUES ('117', 'Inventory Categories', '1', '116', '2015-10-04 15:32:10', '2015-10-04 17:32:10', '0', '0', null, 'cogs', '1');
+INSERT INTO `section` VALUES ('118', 'Inventory Stores', '1', '116', '2015-10-04 15:32:29', '2015-10-04 17:32:29', '0', '0', null, 'cogs', '2');
+INSERT INTO `section` VALUES ('119', 'Suppliers', '1', '116', '2015-10-04 15:32:45', '2015-10-04 17:32:45', '0', '0', null, 'cogs', '3');
+INSERT INTO `section` VALUES ('120', 'Inventory', '0', '0', '2015-10-04 15:34:30', '2016-04-15 12:12:53', '0', '0', null, 'briefcase', '17');
+INSERT INTO `section` VALUES ('121', 'Products', '1', '120', '2015-10-04 15:35:06', '2015-10-04 17:35:06', '0', '0', null, 'briefcase', '1');
+INSERT INTO `section` VALUES ('122', 'Orders', '0', '0', '2015-10-04 15:40:30', '2016-04-15 12:13:19', '0', '0', null, 'shopping-cart', '19');
+INSERT INTO `section` VALUES ('127', 'Accounts', '1', '0', '2015-10-08 19:09:31', '2015-10-08 21:09:31', '0', '0', null, 'money', '6');
+INSERT INTO `section` VALUES ('128', 'Insurance Invoices', '0', '127', '2015-10-08 19:10:39', '2016-04-15 11:01:23', '0', '0', null, '', '3');
+INSERT INTO `section` VALUES ('129', 'Schedules', '0', '19', '2015-10-11 14:59:35', '2016-04-15 11:02:19', '0', '0', null, '', '6');
+INSERT INTO `section` VALUES ('130', 'Petty Cash', '0', '127', '2015-10-17 17:24:35', '2016-04-15 11:01:38', '0', '0', null, '', '4');
+INSERT INTO `section` VALUES ('131', 'Expenditure Accounts', '0', '127', '2015-10-17 17:32:48', '2016-04-15 11:01:36', '0', '0', null, '', '5');
+INSERT INTO `section` VALUES ('132', 'Creditors', '0', '127', '2015-11-10 19:49:31', '2016-04-15 11:01:28', '0', '0', null, '', '6');
 
 -- ----------------------------
 -- Table structure for `session`
