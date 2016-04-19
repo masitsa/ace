@@ -75,6 +75,7 @@ $route['administration/deactivate-section/(:num)/(:num)'] = 'admin/sections/deac
 
 #$route['administration/company-profile'] = 'admin/contacts/show_contacts';
 $route['administration/branches'] = 'admin/branches/index';
+$route['administration/tutorial']='admin/tutorial/index';
 $route['administration/branches/(:any)/(:any)/(:num)'] = 'admin/branches/index/$1/$2/$3';
 $route['administration/branches/(:any)/(:any)'] = 'admin/branches/index/$1/$2';
 $route['administration/add-branch'] = 'admin/branches/add_branch';
@@ -88,6 +89,17 @@ $route['administration/deactivate-branch/(:num)'] = 'admin/branches/deactivate_b
 $route['administration/deactivate-branch/(:num)/(:num)'] = 'admin/branches/deactivate_branch/$1/$2';
 
 $route['print-payslip/(:num)'] = 'admin/payslip_details/$1';
+
+//tutorial routes
+$route['tutorial/human-resource']='hr/tutorial/view_tutorials';
+$route['tutorial/administration/add-human-resource']='admin/tutorial/upload_tutorial';
+$route['administration/activate-tutorial/(:num)'] = 'admin/tutorial/activate_tutorial/$1';
+$route['administration/deactivate-tutorial/(:num)'] = 'admin/tutorial/deactivate_tutorial/$1';
+$route['administration/edit-tutorial/(:num)'] = 'admin/tutorial/edit_tutorial/$1';
+$route['administration/delete-tutorial/(:num)'] = 'admin/tutorial/delete_tutorial/$1';
+$route['tutorial/payroll']='hr/tutorial/view_tutorials';
+$route['tutorial/leave']='hr/tutorial/view_tutorials';
+
 
 /*
 *	HR Routes

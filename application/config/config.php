@@ -16,7 +16,7 @@
 | environments.
 |
 */
-$config['base_url'] = 'http://localhost/human_resource/';
+$config['base_url'] = 'http://localhost/hr/';
 
 /*
 |--------------------------------------------------------------------------

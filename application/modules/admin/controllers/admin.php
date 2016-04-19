@@ -6,6 +6,7 @@ class Admin extends MX_Controller
 	{
 		parent:: __construct();
 		
+		$this->load->model('file_model');
 		$this->load->model('admin_model');
 		$this->load->model('auth/auth_model');
 		$this->load->model('site/site_model');
@@ -15,6 +16,7 @@ class Admin extends MX_Controller
 		$this->load->model('accounts/payroll_model');
 		$this->load->model('admin/branches_model');
 		$this->load->model('admin/users_model');
+		$this->load->model('admin/tutorial_model');
 		
 		if(!$this->auth_model->check_login())
 		{
