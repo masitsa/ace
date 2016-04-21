@@ -1,7 +1,7 @@
 
 	<section class="panel">
                 <header class="panel-heading">
-                    <h2 class="panel-title">Human Resource Tutorials</h2>
+                    <h2 class="panel-title">Leave Tutorials</h2>
                 </header>
                 <div class="panel-body">
                 	<div class="row" style="margin-bottom:20px;">
@@ -27,11 +27,11 @@
 				$tutorial_image = $row->tutorial_image;
 				$section_id = $row->section_id;
 				
-					if ($section_id == 136){
+					if ($section_id == 136)
+					{
 					?> 
-					<div class="item"><h4><?php echo $tutorial_name;?></h4><?php echo $tutorial_description; 
-					?>
-					<?php ?>
+					<div class="item"><h4><?php echo $tutorial_name;?></h4><?php echo $tutorial_description;					?>
+					<img src="<?php echo base_url();?>assets/tutorials/<?php echo $tutorial_image;?>" class="img-responsive" />
 					</div>
 					
 					<?php

@@ -1,7 +1,7 @@
 
 	<section class="panel">
                 <header class="panel-heading">
-                    <h2 class="panel-title">Human Resource Tutorials</h2>
+                    <h2 class="panel-title">Payroll Tutorials</h2>
                 </header>
                 <div class="panel-body">
                 	<div class="row" style="margin-bottom:20px;">
@@ -30,17 +30,19 @@
 					{
 					?> 
 					<div class="item"><h4><?php echo $tutorial_name;?></h4><?php echo $tutorial_description;										 					?>
+                    <img src="<?php echo base_url();?>assets/tutorials/<?php echo $tutorial_image;?>" class="img-responsive" />
                 	</div>
-				
 				<?php
 					}
 				}
+				echo "There are no tutorials for this section";
+				
 			}
-			   else
-			   {
-				   echo "There are tutorials for this section";
-			   }
-                           ?>
+			else
+			{
+			echo "There are no tutorials for this section";
+			}
+					   ?>
 						</div>
                      </div>
                  </div>

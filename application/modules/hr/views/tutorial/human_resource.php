@@ -40,7 +40,7 @@
 			}
 			   else
 			   {
-				   echo "There are tutorials for this section";
+				   echo "There are no tutorials for this section";
 			   }
                            ?>
 						</div>

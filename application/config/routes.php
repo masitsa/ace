@@ -97,8 +97,8 @@ $route['administration/activate-tutorial/(:num)'] = 'admin/tutorial/activate_tut
 $route['administration/deactivate-tutorial/(:num)'] = 'admin/tutorial/deactivate_tutorial/$1';
 $route['administration/edit-tutorial/(:num)'] = 'admin/tutorial/edit_tutorial/$1';
 $route['administration/delete-tutorial/(:num)'] = 'admin/tutorial/delete_tutorial/$1';
-$route['tutorial/payroll']='hr/tutorial/view_tutorials';
-$route['tutorial/leave']='hr/tutorial/view_tutorials';
+$route['tutorial/payroll']='hr/tutorial/payroll';
+$route['tutorial/leave']='hr/tutorial/leave';
 
 
 /*
