@@ -227,7 +227,7 @@ class Branches extends admin
 					$this->session->unset_userdata('branch_thumb_name');
 					$this->session->unset_userdata('branch_error_message');
 					$this->session->set_userdata('success_message', 'Branch updated successfully');
-					redirect('administration/branches');
+					//redirect('administration/branches');
 				}
 				
 				else
