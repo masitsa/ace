@@ -118,38 +118,17 @@ class Payroll extends accounts
 	*/
 	public function salaries($order = 'personnel_onames', $order_method = 'ASC') 
 	{
+		//var_dump("kjdfjsdjfs"); die();
 		$branch_id = $this->session->userdata('branch_id');
 		$branch_name = $this->session->userdata('branch_name');
 		$branches = $this->branches_model->all_branches();
-		/*if(($branch_id == FALSE) || (empty($branch_id)))
-		{
-			if($branches->num_rows() > 0)
-			{
-				$row = $branches->result();
-				$branch_id = $row[0]->branch_id;
-				$branch_name = $row[0]->branch_name;
-				$where = 'personnel_type_id = 1 AND personnel_status != 0 AND branch_id = '.$branch_id;
-				$this->session->set_userdata('branch_id', $branch_id);
-				$this->session->set_userdata('branch_name', $branch_name);
-			}
-			
-			else
-			{
-				$where = 'personnel_type_id = 1 AND personnel_status != 0';
-			}
-		}
 		
-
-		else
-		{
-			$where = 'personnel_type_id = 1 AND personnel_status != 0 AND branch_id = '.$branch_id;
-		}*/
 		$where = 'personnel_type_id = 1 AND personnel_status != 0';
 		$table = 'personnel';
 		//pagination
 		$segment = 5;
 		$this->load->library('pagination');
-		$config['base_url'] = site_url().'accounts/salaries/'.$order.'/'.$order_method;
+		$config['base_url'] = site_url().'accounts/salary-data/'.$order.'/'.$order_method;
 		$config['total_rows'] = $this->users_model->count_items($table, $where);
 		$config['uri_segment'] = $segment;
 		$config['per_page'] = 20;
@@ -180,7 +159,7 @@ class Payroll extends accounts
 		$this->pagination->initialize($config);
 		
 		$page = ($this->uri->segment($segment)) ? $this->uri->segment($segment) : 0;
-        $data["links"] = $this->pagination->create_links();
+        $v_data["links"] = $this->pagination->create_links();
 		$query = $this->personnel_model->get_all_personnel($table, $where, $config["per_page"], $page, $order, $order_method);
 		
 		//change of order method 

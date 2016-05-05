@@ -8,6 +8,7 @@ class Personnel extends hr
 	var $document_upload_location;
 	var $personnel_path;
 	var $personnel_location;
+	var $csv_path;
 	
 	function __construct()
 	{
@@ -19,6 +20,7 @@ class Personnel extends hr
 		$this->document_upload_location = base_url().'assets/document_uploads/';
 		$this->personnel_path = realpath(APPPATH . '../assets/personnel');
 		$this->personnel_location = base_url().'assets/personnel/';
+		$this->csv_path = realpath(APPPATH . '../assets/csv');
 	}
     
 	/*
@@ -965,6 +967,66 @@ class Personnel extends hr
 		}
 		
 		redirect('human-resource/edit-personnel/'.$personnel_id);
+	}
+	
+	//import personnel
+	function import_personnel()
+	{
+		$v_data['title'] = $data['title'] = $this->site_model->display_page_title();
+		
+		$data['content'] = $this->load->view('import/import_personnel', $v_data, true);
+		$this->load->view('admin/templates/general_page', $data);
+	}
+	
+	function import_personnel_template()
+	{
+		//export products template in excel 
+		$this->personnel_model->import_personnel_template();
+	}
+	//do the personnel import
+	function do_personnel_import()
+	{
+		if(isset($_FILES['import_csv']))
+		{
+			if(is_uploaded_file($_FILES['import_csv']['tmp_name']))
+			{
+				//import products from excel 
+				$response = $this->personnel_model->import_csv_personnel($this->csv_path);
+				
+				if($response == FALSE)
+				{
+					$v_data['import_response_error'] = 'Something went wrong. Please try again.';
+				}
+				
+				else
+				{
+					if($response['check'])
+					{
+						$v_data['import_response'] = $response['response'];
+					}
+					
+					else
+					{
+						$v_data['import_response_error'] = $response['response'];
+					}
+				}
+			}
+			
+			else
+			{
+				$v_data['import_response_error'] = 'Please select a file to import.';
+			}
+		}
+		
+		else
+		{
+			$v_data['import_response_error'] = 'Please select a file to import.';
+		}
+		
+		$v_data['title'] = $data['title'] = $this->site_model->display_page_title();
+		
+		$data['content'] = $this->load->view('import/import_personnel', $v_data, true);
+		$this->load->view('admin/templates/general_page', $data);
 	}
 }
 ?>

@@ -77,7 +77,7 @@
 						<td>'.number_format($nssf, 2).'</td>
 						<td>'.number_format($nhif, 2).'</td>
 						<td>'.number_format($total_deductions, 2).'</td>
-						<td>'.number_format($net, 2).'</td>
+						<td>'.number_format($net, 0).'.00</td>
 						<td><a href="'.site_url().'accounts/payment-details/'.$personnel_id.'" class="btn btn-sm btn-success" title="Edit '.$personnel_name.'"><i class="fa fa-pencil"></i></a></td>
 						<td><a href="'.site_url().'accounts/payroll/view-payslip/'.$personnel_id.'" class="btn btn-sm btn-info" title="Payslip for '.$personnel_name.'" target="_blank">Payslip</td>
 					</tr> 
@@ -135,6 +135,7 @@
                                 </div>
 							</div>
                             <div class="panel-footer">
+                           
                             	<?php if(isset($links)){echo $links;}?>
                             </div>
 						</section>

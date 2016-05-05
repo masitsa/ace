@@ -626,5 +626,14 @@ $route['inventory/close-product-search'] = 'inventory_management/close_inventory
 
 $route['orders'] = 'inventory/orders/index';
 
+//import personnel routes
+$route['import/personnel'] = 'hr/personnel/import_personnel';
+$route['import/personnel-template'] = 'hr/personnel/import_personnel_template';
+$route['import/import-personnel'] = 'hr/personnel/do_personnel_import';
+
+//payroll data import
+$route['import/payroll-data'] = 'hr/import_payroll';
+$route['import/payroll-template'] = 'hr/import_payroll_template';
+$route['import/import-payroll']= 'hr/do_payroll_import';
 
 

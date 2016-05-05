@@ -77,7 +77,7 @@ class Auth extends MX_Controller
 					$personnel_type_id = $this->session->userdata('personnel_type_id');
 					if(!empty($personnel_type_id) && ($personnel_type_id != 1))
 					{
-						redirect('doctor/dashboard');
+						redirect('dashboard');
 					}
 					
 					else
