@@ -113,6 +113,7 @@ class Charts extends admin {
 		$methods_result = $this->reports_model->get_all_payment_methods();
 		
 		$totals = '';
+		$payment_method_id = '';
 		$highest_bar = 0;
 		$r = 0;
 		

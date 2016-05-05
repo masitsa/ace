@@ -337,7 +337,8 @@ class Site_model extends CI_Model
 	}
 	
 	//The function returns the no. of business days between two dates and it skips the holidays
-	public function getWorkingDays($startDate, $endDate, $holidays = NULL){
+	public function getWorkingDays($startDate, $endDate, $holidays = NULL)
+	{
 		// do strtotime calculations just once
 		$endDate = strtotime($endDate);
 		$startDate = strtotime($startDate);
