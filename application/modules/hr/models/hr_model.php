@@ -257,7 +257,7 @@ class Hr_model extends CI_Model
 									$class = 'warning';
 								}
 							}
-							else if($check = "Arrears Pay")
+							else if($check == "Arrears Pay")
 							{
 								$items2['allowance_id'] = 3;
 								$items2['personnel_allowance_amount'] = $amount;
@@ -335,6 +335,7 @@ class Hr_model extends CI_Model
 					$comment .= 'The amount cannot be 0';
 					$class = 'danger';
 				}
+				
 					
 				$response .= '
 					
