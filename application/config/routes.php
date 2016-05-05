@@ -262,6 +262,7 @@ $route['hospital-administration/deactivate-insurance-company/(:num)'] = 'hospita
 /*
 *	Accounts Routes
 */
+$route['accounts/calculate-paye/(:num)'] = 'accounts/payroll/calculate_personnel_paye/$1';
 $route['accounts/creditors'] = 'accounts/creditors/index';
 $route['accounts/hospital-accounts'] = 'accounts/hospital_accounts/index';
 $route['accounts/petty-cash'] = 'accounts/petty_cash/index';

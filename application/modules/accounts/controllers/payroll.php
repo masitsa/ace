@@ -118,13 +118,18 @@ class Payroll extends accounts
 	*/
 	public function salaries($order = 'personnel_onames', $order_method = 'ASC') 
 	{
-		//var_dump("kjdfjsdjfs"); die();
+		$personnel_search = $this->session->userdata('personnel_search');
+		$where = 'personnel_type_id = 1 AND personnel_status != 0';
+		$table = 'personnel';
+		
+		if(!empty($personnel_search))
+		{
+			$where .= $personnel_search;
+		}
 		$branch_id = $this->session->userdata('branch_id');
 		$branch_name = $this->session->userdata('branch_name');
 		$branches = $this->branches_model->all_branches();
 		
-		$where = 'personnel_type_id = 1 AND personnel_status != 0';
-		$table = 'personnel';
 		//pagination
 		$segment = 5;
 		$this->load->library('pagination');
@@ -1493,6 +1498,111 @@ class Payroll extends accounts
 		}
 		
 		redirect('accounts/payment-details/'.$personnel_id);
+	}
+	
+	public function search_personnel()
+	{
+		$personnel_number = $this->input->post('personnel_number');
+		$branch_id = $this->input->post('branch_id');
+		$search_title = '';
+		
+		/*if(!empty($personnel_number))
+		{
+			$search_title .= ' member number <strong>'.$personnel_number.'</strong>';
+			$personnel_number = ' AND personnel.personnel_number LIKE \'%'.$personnel_number.'%\'';
+		}*/
+		if(!empty($personnel_number))
+		{
+			$search_title .= ' personnel number <strong>'.$personnel_number.'</strong>';
+			$personnel_number = ' AND personnel.personnel_number = \''.$personnel_number.'\'';
+		}
+		
+		if(!empty($branch_id))
+		{
+			$search_title .= ' member type <strong>'.$branch_id.'</strong>';
+			$branch_id = ' AND personnel.branch_id = \''.$branch_id.'\' ';
+		}
+		
+		//search surname
+		if(!empty($_POST['personnel_fname']))
+		{
+			$search_title .= ' first name <strong>'.$_POST['personnel_fname'].'</strong>';
+			$surnames = explode(" ",$_POST['personnel_fname']);
+			$total = count($surnames);
+			
+			$count = 1;
+			$surname = ' AND (';
+			for($r = 0; $r < $total; $r++)
+			{
+				if($count == $total)
+				{
+					$surname .= ' personnel.personnel_fname LIKE \'%'.mysql_real_escape_string($surnames[$r]).'%\'';
+				}
+				
+				else
+				{
+					$surname .= ' personnel.personnel_fname LIKE \'%'.mysql_real_escape_string($surnames[$r]).'%\' AND ';
+				}
+				$count++;
+			}
+			$surname .= ') ';
+		}
+		
+		else
+		{
+			$surname = '';
+		}
+		
+		//search other_names
+		if(!empty($_POST['personnel_onames']))
+		{
+			$search_title .= ' other names <strong>'.$_POST['personnel_onames'].'</strong>';
+			$other_names = explode(" ",$_POST['personnel_onames']);
+			$total = count($other_names);
+			
+			$count = 1;
+			$other_name = ' AND (';
+			for($r = 0; $r < $total; $r++)
+			{
+				if($count == $total)
+				{
+					$other_name .= ' personnel.personnel_onames LIKE \'%'.mysql_real_escape_string($other_names[$r]).'%\'';
+				}
+				
+				else
+				{
+					$other_name .= ' personnel.personnel_onames LIKE \'%'.mysql_real_escape_string($other_names[$r]).'%\' AND ';
+				}
+				$count++;
+			}
+			$other_name .= ') ';
+		}
+		
+		else
+		{
+			$other_name = '';
+		}
+		
+		$search = $personnel_number.$branch_id.$surname.$other_name;
+		$this->session->set_userdata('personnel_search', $search);
+		$this->session->set_userdata('personnel_search_title', $search_title);
+		
+		$this->salaries();
+	}
+	
+	public function close_search()
+	{
+		$this->session->unset_userdata('personnel_search', $search);
+		$this->session->unset_userdata('personnel_search_title', $search_title);
+		
+		redirect('accounts/salary-data');
+	}
+	
+	public function calculate_personnel_paye($taxable)
+	{
+		echo $taxable.'<br/>';
+		$paye = $this->payroll_model->calculate_paye($taxable);
+		echo $paye;
 	}
 }
 ?>
