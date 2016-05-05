@@ -7,11 +7,11 @@
         </header>             
 
         <!-- Widget content -->
-         <div class="panel-body">
-          <div class="padd">
+		<div class="panel-body">
+        <div class="padd">
             
-            <div class="row">
-                <div class="col-md-12">
+        <div class="row">
+        <div class="col-md-12">
 		<?php
 		$error = $this->session->userdata('error_message');
 		$success = $this->session->userdata('success_message');
@@ -45,8 +45,8 @@
                     }
                 }
             ?>
-                </div>
-            </div>
+                
+            
             <?php echo form_open_multipart('import/import-personnel', array("class" => "form-horizontal", "role" => "form"));?>
             <!--<div class="alert alert-info">
             	Please ensure that you have set up the following in the hospital administration:
@@ -68,24 +68,49 @@
             </div>
             
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-3 pull-left">
                     <?php
-                    /*$data = array(
-                          'class'       => 'custom-file-input btn-red btn-width',
-                          'name'        => 'import_csv',
-                          'onchange'    => 'this.form.submit();',
-                          'type'       	=> 'file'
-                        );
-                
-                    echo form_input($data);*/
-                    ?>
-                    <div class="fileUpload btn btn-primary">
+					$branches = $this->branches_model->all_branches();
+					?>
+                    <label class="col-lg-4 control-label">Branch <span class="required">*</span></label>
+                      <div class="col-lg-8">
+                      <select name="branch_id" id="branch_id" class="form-control">
+                        <?php
+                        echo '<option value="0">No Branch </option>';
+                        if($branches->num_rows() > 0)
+                        {
+                        	$result = $branches->result();
+                            foreach($result as $res)
+                            	{
+                                	if($res->branch_id == $branch_id)
+                                    	{
+                                        echo '<option value="'.$res->branch_id.'" selected>'.$res->branch_name.' '.$res->branch_id.'</option>';
+                                        }
+                                        else
+                                        {
+                                        echo '<option value="'.$res->branch_id.'">'.$res->branch_name.' </option>';
+                                        }
+                                 }
+                           }
+                           ?>
+                           </select>
+                           
+                      </div>
+                </div>
+				<br/>
+				<div class="col-md-12" style="margin-top:10px">
+					<div class="fileUpload btn btn-primary">
                         <span>Import Personnel</span>
                         <input type="file" class="upload" onChange="this.form.submit();" name="import_csv" />
                     </div>
-                </div>
+				</div>
             </div>
+                   
+                    
+        </div>
+        </div>
             <?php echo form_close();?>
 		</div>
-      </div>
+		</div>
+
 </section>

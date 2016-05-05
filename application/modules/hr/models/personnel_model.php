@@ -1204,7 +1204,7 @@ class Personnel_model extends CI_Model
 				$items['created'] = date('Y-m-d H:i:s');
 				$items['modified_by'] = $this->session->userdata('personnel_id');
 				$items['created_by'] = $this->session->userdata('personnel_id');
-				
+				$items['branch_id'] = $this->input->post('branch_id');
 				$items['personnel_onames'] = $personnel_onames1.' '.$personnel_onames2;
 				$comment = '';
 				
@@ -1272,7 +1272,7 @@ class Personnel_model extends CI_Model
 	
 	public function check_current_personnel_exisits($personnel_id)
 	{
-		$this->db->where('personnel_id', $personnel_id);
+		$this->db->where('personnel_number', $personnel_id);
 		
 		$query = $this->db->get('personnel');
 		
