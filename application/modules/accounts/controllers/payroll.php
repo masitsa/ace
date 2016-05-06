@@ -1113,7 +1113,7 @@ class Payroll extends accounts
 				$payment_id = $row2->payment_id;
 				$amount = $this->input->post("personnel_payment_amount".$payment_id);
 				
-				if($amount > 0)
+				if(($amount >= 0) || ($amount < 0))
 				{
 					$items = array(
 						"payment_id" => $payment_id,
