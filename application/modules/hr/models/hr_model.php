@@ -86,8 +86,15 @@ class Hr_model extends CI_Model
 		$row_count=0;
 		
 		$report[$row_count][0] = 'Employee Number';
-		$report[$row_count][1] = 'Payment Type';
-		$report[$row_count][2] = 'Amount';
+		$report[$row_count][1] = 'Basic Pay';
+		$report[$row_count][2] = 'Days Not Worked';
+		$report[$row_count][3] = 'Overtime';
+		$report[$row_count][4] = 'Leave Pay';
+		$report[$row_count][5] = 'Arrears Pay';
+		$report[$row_count][6] = 'Commission Pay';
+		$report[$row_count][7] = 'Notice Pay';
+		$report[$row_count][8] = 'HELB';
+		$report[$row_count][9] = 'Safaricom SACCO';
 		
 		$row_count++;
 		
@@ -137,7 +144,7 @@ class Hr_model extends CI_Model
 		$total_columns = count($array[0]);//var_dump($array);die();
 		
 		//if products exist in array
-		if(($total_rows > 0) && ($total_columns == 3))
+		if(($total_rows > 0) && ($total_columns == 10))
 		{
 			$response = '
 				<table class="table table-hover table-bordered ">
@@ -145,8 +152,8 @@ class Hr_model extends CI_Model
 						<tr>
 						  <th>#</th>
 						  <th>Member Number</th>
-						  <th>Type</th>
-						  <th>Amount</th>
+						  <th>Basic Salary</th>
+						  <th>SACCO</th>
 						  <th>Comment</th>
 						</tr>
 					  </thead>
@@ -161,20 +168,25 @@ class Hr_model extends CI_Model
 				$personnel_number = $items['personnel_number'] = $array[$r][0];
 				$personnel_id = $this->get_personnel_id($personnel_number);
 				$items1['personnel_id'] = $items2['personnel_id'] = $items3['personnel_id'] = $items4['personnel_id'] = $personnel_id;
-				$check = $array[$r][1];
-				$amount = $array[$r][2];
+				$basic_amount = $array[$r][1];
+				$days_not_worked = $array[$r][2];
+				$overtime = $array[$r][3];
+				$leave_pay = $array[$r][4];
+				$arrears_pay = $array[$r][5];
+				$commission = $array[$r][6];
+				$notice_pay = $array[$r][7];
+				$helb = $array[$r][8];
+				$safcom_sacco = $array[$r][9];
 				$comment = '';
 				
-				if($amount != 0)
+				if($basic_amount != 0)
 				{
-					if(!empty($amount))
+					if(!empty($basic_amount))
 					{
 						if(!empty($personnel_number))
 						{
-							if($check == "Basic Pay")
-							{
 								$items1['payment_id'] = 1;
-								$items1['personnel_payment_amount'] = $amount;
+								$items1['personnel_payment_amount'] = $basic_amount;
 								
 								if($this->db->insert('personnel_payment', $items1))
 								{
@@ -187,133 +199,157 @@ class Hr_model extends CI_Model
 									$comment .= '<br/>Internal error. Could not add payroll data to the database. Please contact the site administrator';
 									$class = 'warning';
 								}
-							}
-							
-							else if($check == "HELB Deduction")
-							{
-								$items3['deduction_id'] = 3;
-								$items3['personnel_deduction_amount'] = $amount;
 								
-								if($this->db->insert('personnel_deduction', $items3))
+								if(!empty($days_not_worked) && ($days_not_worked!=0))
 								{
-									$comment .= '<br/>Payroll Data successfully added to the database';
-									$class = 'success';
+									$items1['payment_id'] = 2;
+									$items1['personnel_payment_amount'] = $days_not_worked;
+									
+									if($this->db->insert('personnel_payment', $items1))
+									{
+										$comment .= '<br/>Payroll Data successfully added to the database';
+										$class = 'success';
+									}
+									
+									else
+									{
+										$comment .= '<br/>Internal error. Could not add payroll data to the database. Please contact the site administrator';
+										$class = 'warning';
+									}
+								}
+								else
+								{
+										$comment .= '<br/>Notice. The days not worked cannot be empty. If there are no days not worked, please put a 0';
+										$class = 'warning';
+								}
+								
+								if($overtime !=0)
+								{
+									$items2['personnel_allowance_amount'] = $overtime;
+									$items2['allowance_id'] = 1;
+									if($this->db->insert('personnel_allowance', $items2))
+									{
+										$comment .= '<br/>Payroll Data successfully added to the database';
+										$class = 'success';
+									}
+									
+									else
+									{
+										$comment .= '<br/>Internal error. Could not add payroll data to the database. No overtime allowance has been earned by this employee.';
+										$class = 'warning';
+									}
+								}
+								else if($leave_pay !=0)
+								{
+									$items2['personnel_allowance_amount'] = $leave_pay;
+									$items2['allowance_id'] = 2;
+									if($this->db->insert('personnel_allowance', $items2))
+									{
+										$comment .= '<br/>Payroll Data successfully added to the database';
+										$class = 'success';
+									}
+									
+									else
+									{
+										$comment .= '<br/>Internal error. Could not add payroll data to the database. No leave allowance has been earned by this employee.';
+										$class = 'warning';
+									}
+								}
+								else if($arrears_pay !=0)
+								{
+									$items2['personnel_allowance_amount'] = $arrears_pay;
+									$items2['allowance_id'] = 3;
+									if($this->db->insert('personnel_allowance', $items2))
+									{
+										$comment .= '<br/>Payroll Data successfully added to the database';
+										$class = 'success';
+									}
+									
+									else
+									{
+										$comment .= '<br/>Internal error. Could not add payroll data to the database. No arrears allowance has been earned by this employee.';
+										$class = 'warning';
+									}
+								}
+								else if($commission !=0)
+								{
+									$items2['personnel_allowance_amount'] = $commission;
+									$items2['allowance_id'] = 4;
+									if($this->db->insert('personnel_allowance', $items2))
+									{
+										$comment .= '<br/>Payroll Data successfully added to the database';
+										$class = 'success';
+									}
+									
+									else
+									{
+										$comment .= '<br/>Internal error. Could not add payroll data to the database. No commission allowance has been earned by this employee.';
+										$class = 'warning';
+									}
+								}
+								
+								else if($notice_pay !=0)
+								{
+									$items2['personnel_allowance_amount'] = $notice_pay;
+									$items2['allowance_id'] = 5;
+									if($this->db->insert('personnel_allowance', $items2))
+									{
+										$comment .= '<br/>Payroll Data successfully added to the database';
+										$class = 'success';
+									}
+									
+									else
+									{
+										$comment .= '<br/>Internal error. Could not add payroll data to the database. No notice allowance has been given to this employee.';
+										$class = 'warning';
+									}
 								}
 								
 								else
 								{
-									$comment .= '<br/>Internal error. Could not add payroll data to the database. Please contact the site administrator';
-									$class = 'warning';
+									$comment .= 'No other allowance is available';
 								}
-							}
-							else if($check == "Safaricom Sacco")
-							{
-								$items4['other_deduction_id'] = 2;
-								$items4['personnel_other_deduction_amount'] = $amount;
-								
-								if($this->db->insert('personnel_other_deduction', $items4))
+								if($helb !=0)
 								{
-									$comment .= '<br/>Payroll Data successfully added to the database';
-									$class = 'success';
+									$items3['personnel_deduction_amount'] = $helb;
+									$items3['deduction_id'] = 3;
+									if($this->db->insert('personnel_deduction', $items3))
+									{
+										$comment .= '<br/>Payroll Data successfully added to the database';
+										$class = 'success';
+									}
+									
+									else
+									{
+										$comment .= '<br/>Internal error. Could not add payroll data to the database. No HELB deduction.';
+										$class = 'warning';
+									}
 								}
-								
 								else
 								{
-									$comment .= '<br/>Internal error. Could not add payroll data to the database. Please contact the site administrator';
-									$class = 'warning';
+									$comment .= 'HELB deduction can not be 0';
 								}
-							}
-							else if($check == "Overtime")
-							{
-								$items2['allowance_id'] = 1;
-								$items2['personnel_allowance_amount'] = $amount;
-								
-								if($this->db->insert('personnel_allowance', $items2))
+								if($safcom_sacco !=0)
 								{
-									$comment .= '<br/>Payroll Data successfully added to the database';
-									$class = 'success';
+									$items4['personnel_other_deduction_amount'] = $safcom_sacco;
+									$items4['other_deduction_id'] = 3;
+									if($this->db->insert('personnel_other_deduction', $items4))
+									{
+										$comment .= '<br/>Payroll Data successfully added to the database';
+										$class = 'success';
+									}
+									
+									else
+									{
+										$comment .= '<br/>Internal error. Could not add payroll data to the database. No Sacco deduction.';
+										$class = 'warning';
+									}
 								}
-								
 								else
 								{
-									$comment .= '<br/>Internal error. Could not add payroll data to the database. Please contact the site administrator';
-									$class = 'warning';
+									$comment .= 'Cannot deduct SACCO amounts of 0';
 								}
-							}
-							else if($check == "Leave Pay")
-							{
-								$items2['allowance_id'] = 2;
-								$items2['personnel_allowance_amount'] = $amount;
-								
-								if($this->db->insert('personnel_allowance', $items2))
-								{
-									$comment .= '<br/>Payroll Data successfully added to the database';
-									$class = 'success';
-								}
-								
-								else
-								{
-									$comment .= '<br/>Internal error. Could not add payroll data to the database. Please contact the site administrator';
-									$class = 'warning';
-								}
-							}
-							else if($check == "Arrears Pay")
-							{
-								$items2['allowance_id'] = 3;
-								$items2['personnel_allowance_amount'] = $amount;
-								
-								if($this->db->insert('personnel_allowance', $items2))
-								{
-									$comment .= '<br/>Payroll Data successfully added to the database';
-									$class = 'success';
-								}
-								
-								else
-								{
-									$comment .= '<br/>Internal error. Could not add payroll data to the database. Please contact the site administrator';
-									$class = 'warning';
-								}
-							}
-							else if($check == "Commission Pay")
-							{
-								$items2['allowance_id'] = 4;
-								$items2['personnel_allowance_amount'] = $amount;
-								
-								if($this->db->insert('personnel_allowance', $items2))
-								{
-									$comment .= '<br/>Payroll Data successfully added to the database';
-									$class = 'success';
-								}
-								
-								else
-								{
-									$comment .= '<br/>Internal error. Could not add payroll data to the database. Please contact the site administrator';
-									$class = 'warning';
-								}
-							}
-							else if($check == "Notice Pay")
-							{
-								$items2['allowance_id'] = 5;
-								$items2['personnel_allowance_amount'] = $amount;
-								
-								if($this->db->insert('personnel_allowance', $items2))
-								{
-									$comment .= '<br/>Payroll Data successfully added to the database';
-									$class = 'success';
-								}
-								
-								else
-								{
-									$comment .= '<br/>Internal error. Could not add payroll data to the database. Please contact the site administrator';
-									$class = 'warning';
-								}
-							}
-							
-							else
-							{
-								$comment .= 'The account type cannot be found';
-								$class = 'danger';
-							}
+						
 						}
 						
 						else
@@ -342,8 +378,8 @@ class Hr_model extends CI_Model
 						<tr class="'.$class.'">
 							<td>'.$r.'</td>
 							<td>'.$items['personnel_number'].'</td>
-							<td>'.$check.'</td>
-							<td>'.$amount.'</td>
+							<td>'.$basic_amount.'</td>
+							<td>'.$safcom_sacco.'</td>
 							<td>'.$comment.'</td>
 						</tr> 
 				';
