@@ -16,7 +16,7 @@
 | environments.
 |
 */
-$config['base_url'] = 'http://localhost/hr/';
+$config['base_url'] = 'http://localhost/ace/';
 
 /*
 |--------------------------------------------------------------------------

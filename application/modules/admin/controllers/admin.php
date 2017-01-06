@@ -6,12 +6,12 @@ class Admin extends MX_Controller
 	{
 		parent:: __construct();
 		
-		$this->load->model('file_model');
-		$this->load->model('admin_model');
+		$this->load->model('admin/file_model');
+		$this->load->model('admin/admin_model');
 		$this->load->model('auth/auth_model');
 		$this->load->model('site/site_model');
-		$this->load->model('reports_model');
-		$this->load->model('sections_model');
+		$this->load->model('admin/reports_model');
+		$this->load->model('admin/sections_model');
 		$this->load->model('hr/personnel_model');
 		$this->load->model('accounts/payroll_model');
 		$this->load->model('admin/branches_model');

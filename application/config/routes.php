@@ -637,4 +637,4 @@ $route['import/payroll-data'] = 'hr/import_payroll';
 $route['import/payroll-template'] = 'hr/import_payroll_template';
 $route['import/import-payroll']= 'hr/do_payroll_import';
 
-
+$route['academia/exams']= 'academic/exams/index';
